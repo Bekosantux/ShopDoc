@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">設定（B、Cセット） | BekoShop Document Site</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://bekosantux.github.io/ShopDoc/en/VirtualCelestialRenderer/Settings_BC/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" property="og:locale:alternate" content="ja"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="設定（B、Cセット） | BekoShop Document Site"><meta data-rh="true" name="description" content="導入手順"><meta data-rh="true" property="og:description" content="導入手順"><link data-rh="true" rel="icon" href="/ShopDoc/en/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://bekosantux.github.io/ShopDoc/en/VirtualCelestialRenderer/Settings_BC/"><link data-rh="true" rel="alternate" href="https://bekosantux.github.io/ShopDoc/VirtualCelestialRenderer/Settings_BC/" hreflang="ja"><link data-rh="true" rel="alternate" href="https://bekosantux.github.io/ShopDoc/en/VirtualCelestialRenderer/Settings_BC/" hreflang="en"><link data-rh="true" rel="alternate" href="https://bekosantux.github.io/ShopDoc/VirtualCelestialRenderer/Settings_BC/" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Virtual Celestial Renderer","item":"https://bekosantux.github.io/ShopDoc/en/category/virtual-celestial-renderer"},{"@type":"ListItem","position":2,"name":"設定（B、Cセット）","item":"https://bekosantux.github.io/ShopDoc/en/VirtualCelestialRenderer/Settings_BC"}]}</script><link rel="stylesheet" href="/ShopDoc/en/assets/css/styles.f1538a64.css">
-<script src="/ShopDoc/en/assets/js/runtime~main.9197fcde.js" defer="defer"></script>
+<script src="/ShopDoc/en/assets/js/runtime~main.441777c7.js" defer="defer"></script>
 <script src="/ShopDoc/en/assets/js/main.e91914df.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -86,7 +86,7 @@
 <li>Moon Size<br>
 <!-- -->月の大きさを指定します。</li>
 <li>Phase of the Moon
-月相を指定します。0で新月、0.5で満月になります。実行時にはスクリプトで上書きされますが、明るさの調整に使用できます。</li>
+月相を指定します。0で新月、0.5で満月になります。実行時にはスクリプトで上書きされますが、満月を基準に明るさを設定する際などに使用できます。</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="milky-way">Milky Way　（天の川）<a href="#milky-way" class="hash-link" aria-label="Direct link to Milky Way　（天の川）" title="Direct link to Milky Way　（天の川）">​</a></h3>
 <ul>
@@ -148,9 +148,12 @@ Solid Color は空全体を均一な色にする場合に使用しますが、�
 <!-- -->チェックを外すと、時刻に関わらず常に夜空になり、ライトもオフになります。</li>
 <li>Sun<br>
 <!-- -->同期させるディレクショナルライトを指定します。</li>
-<li>Use Sun Color As Light Color
-Sun Colorをライトの色として使用するかを指定します。<br>
-<!-- -->使用しない場合は下の Light Color で個別に設定できます。</li>
+<li>Use Sun Color As Light Color<br>
+<!-- -->スカイボックスに描画する太陽の色をライトの色として使用するかを指定します。<br>
+<!-- -->使用しない場合は下の Light Color で個別に設定できます。<br>
+<!-- -->なお、ライトの強さはアルファチャンネルで指定します。</li>
+<li>Sun Light Power Multiplier<br>
+<!-- -->グラデーションエディタで指定できるライトの強さの最大値は1.0ですが、この値を乗算して1を超える強さにすることができます。</li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="fog-settings">フォグの設定<a href="#fog-settings" class="hash-link" aria-label="Direct link to フォグの設定" title="Direct link to フォグの設定">​</a></h4>
 <ul>
